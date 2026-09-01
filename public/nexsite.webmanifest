@@ -1,0 +1,13 @@
+{
+  "name": "Nexsite",
+  "short_name": "Nexsite",
+  "icons": [
+    {
+      "src": "/nexsite-favicon-43d20066.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "display": "standalone"
+}
