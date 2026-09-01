@@ -25,7 +25,7 @@ export function Hero() {
             <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-border px-4 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-violet shadow-[0_0_12px_var(--violet)]" />
               <span className="eyebrow !text-muted-foreground">
-                Digital Studio — Est. 2019
+                Digital Studio — Est. 2026
               </span>
             </div>
           </Reveal>

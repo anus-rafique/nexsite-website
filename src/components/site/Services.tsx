@@ -72,7 +72,9 @@ function ServiceCard({ s, className = "" }: { s: (typeof services)[number]; clas
 
       {/* Text content, sits above the background */}
       <div className="relative flex min-h-[240px] items-center py-8 pl-7 pr-4">
-        <div className={s.image ? "w-1/2" : "w-full"}>
+        <div
+          className={`flex flex-col items-center text-center sm:items-start sm:text-left ${s.image ? "w-full sm:w-1/2" : "w-full"}`}
+        >
           <span className="grid h-11 w-11 place-items-center rounded-lg bg-black/15 backdrop-blur-sm">
             <s.icon className="h-5 w-5" strokeWidth={1.6} />
           </span>
@@ -91,7 +93,7 @@ function ServiceCard({ s, className = "" }: { s: (typeof services)[number]; clas
           src={s.image}
           alt=""
           aria-hidden
-          className={`pointer-events-none absolute right-2 top-1/2 z-10 -translate-y-1/2 object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-105 sm:right-3 ${s.imageSize}`}
+          className={`pointer-events-none absolute right-2 top-1/2 z-10 hidden -translate-y-1/2 object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-105 sm:right-3 sm:block ${s.imageSize}`}
         />
       )}
     </article>
