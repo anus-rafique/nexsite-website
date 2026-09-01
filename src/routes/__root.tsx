@@ -91,7 +91,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      {
+        rel: "icon",
+        href: "/nexsite-favicon-43d20066.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+      {
+        rel: "apple-touch-icon",
+        href: "/nexsite-favicon-43d20066.png",
+        sizes: "512x512",
+      },
+      { rel: "manifest", href: "/nexsite.webmanifest" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
